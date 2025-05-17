@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Bu satır HTML5 standardını belirtir. Tarayıcıya bu belgenin HTML5 ile yazıldığını söyler. -->
+
+<html lang="en">
+<!-- HTML belgesinin dilini İngilizce olarak ayarlar. -->
+
+  <head>
+    <meta charset="utf-8" />
+    <!-- Sayfanın karakter kodlamasını UTF-8 olarak ayarlar. Türkçe karakterler gibi özel karakterler düzgün görünür. -->
+
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- Tarayıcı sekmesinde görünen küçük simgeyi (favicon) belirtir. %PUBLIC_URL% derleme sırasında public klasör yoluyla değiştirilir. -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+    />
+    <!-- Google Fonts üzerinden Roboto fontunu sayfaya dahil eder. -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Google'dan Material Icons (ikon fontları) kütüphanesini dahil eder. -->
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Sayfanın mobil uyumlu olmasını sağlar. Genişlik cihazın genişliğine göre ayarlanır. -->
+
+    <meta name="theme-color" content="#000000" />
+    <!-- Tarayıcı arayüzü rengi (özellikle mobilde üst çubuğun rengi gibi) olarak siyah (#000000) ayarlanır. -->
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- Web uygulaması olarak eklenmek için gerekli manifest dosyasını belirtir. Bu dosyada uygulama adı, ikonlar, tema gibi bilgiler bulunur. -->
+
+    <!-- 
+      Yukarıdaki %PUBLIC_URL% kullanımı, uygulama build (üretim) edildiğinde otomatik olarak doğru yol ile değiştirilir.
+      Public klasörünün dışındaki dosyalara bu yöntemle erişilemez.
+    -->
+
+    <title>React App</title>
+    <!-- Sayfa başlığı. Tarayıcı sekmesinde görünen isimdir. -->
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- Eğer kullanıcı tarayıcısında JavaScript'i devre dışı bırakmışsa bu uyarı mesajı görünür. -->
+
+    <div id="root"></div>
+    <!-- React uygulamasının yükleneceği ana div. React, tüm içeriğini buraya render eder. -->
+
+    <!-- 
+      Bu HTML dosyası, React uygulamasının şablonudur. 
+      Doğrudan açıldığında boş görünür çünkü JavaScript çalışmadığı sürece içerik yüklenmez.
+      Geliştirme için `npm start`, üretim için `npm run build` komutları kullanılır.
+    -->
+  </body>
+</html>
